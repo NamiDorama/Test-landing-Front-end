@@ -46,7 +46,7 @@
 body {
   font-family: 'OpenSans-Regular', sans-serif;
   font-weight: 400;
-  font-size: 15px; }
+  font-size: 14px; }
   body a {
     text-decoration: none; }
 
@@ -95,7 +95,7 @@ header {
         header .topics a:hover::after {
           display: block; }
 
-main {
+.title-section {
   height: 600px;
   width: 100%;
   margin: 0 auto;
@@ -104,7 +104,7 @@ main {
   -webkit-background-size: cover;
           background-size: cover;
   background-repeat: no-repeat; }
-  main .title {
+  .title-section .title {
     height: 100%;
     width: 100%;
     background-color: rgba(117, 130, 226, 0.8);
@@ -120,5 +120,187 @@ main {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    main .title .title-form input, main .title .title-form select {
-      display: block; }
+    .title-section .title .title-form {
+      background-color: #FFF;
+      padding: 0 40px 0 30px;
+      -webkit-border-radius: 15px;
+              border-radius: 15px;
+      margin-right: 90px;
+      -webkit-box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.15);
+              box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.15); }
+      .title-section .title .title-form p {
+        color: #5363db;
+        font-size: 25px;
+        font-family: 'OpenSans-SemiBold';
+        margin: 40px 0 30px; }
+      .title-section .title .title-form input, .title-section .title .title-form select {
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        display: block;
+        height: 50px;
+        width: 100%;
+        margin-bottom: 17px;
+        background-color: #f2f2f2;
+        border: none;
+        -webkit-border-radius: 6px;
+                border-radius: 6px;
+        padding-left: 10px;
+        color: #888888; }
+        .title-section .title .title-form input::-webkit-input-placeholder, .title-section .title .title-form select::-webkit-input-placeholder {
+          opacity: 1;
+          -webkit-transition: opacity 0.3s ease;
+          -o-transition: opacity 0.3s ease;
+          transition: opacity 0.3s ease; }
+        .title-section .title .title-form input::-moz-placeholder, .title-section .title .title-form select::-moz-placeholder {
+          opacity: 1;
+          -webkit-transition: opacity 0.3s ease;
+          -o-transition: opacity 0.3s ease;
+          transition: opacity 0.3s ease; }
+        .title-section .title .title-form input:-ms-input-placeholder, .title-section .title .title-form select:-ms-input-placeholder {
+          opacity: 1;
+          -webkit-transition: opacity 0.3s ease;
+          -o-transition: opacity 0.3s ease;
+          transition: opacity 0.3s ease; }
+        .title-section .title .title-form input::-ms-input-placeholder, .title-section .title .title-form select::-ms-input-placeholder {
+          opacity: 1;
+          -webkit-transition: opacity 0.3s ease;
+          -o-transition: opacity 0.3s ease;
+          transition: opacity 0.3s ease; }
+        .title-section .title .title-form input::placeholder, .title-section .title .title-form select::placeholder {
+          opacity: 1;
+          -webkit-transition: opacity 0.3s ease;
+          -o-transition: opacity 0.3s ease;
+          transition: opacity 0.3s ease; }
+        .title-section .title .title-form input:focus, .title-section .title .title-form select:focus {
+          outline: none;
+          border: 1px solid #c7c6c6; }
+          .title-section .title .title-form input:focus::-webkit-input-placeholder, .title-section .title .title-form select:focus::-webkit-input-placeholder {
+            opacity: 0;
+            -webkit-transition: opacity 0.3s ease;
+            -o-transition: opacity 0.3s ease;
+            transition: opacity 0.3s ease; }
+          .title-section .title .title-form input:focus::-moz-placeholder, .title-section .title .title-form select:focus::-moz-placeholder {
+            opacity: 0;
+            -webkit-transition: opacity 0.3s ease;
+            -o-transition: opacity 0.3s ease;
+            transition: opacity 0.3s ease; }
+          .title-section .title .title-form input:focus:-ms-input-placeholder, .title-section .title .title-form select:focus:-ms-input-placeholder {
+            opacity: 0;
+            -webkit-transition: opacity 0.3s ease;
+            -o-transition: opacity 0.3s ease;
+            transition: opacity 0.3s ease; }
+          .title-section .title .title-form input:focus::-ms-input-placeholder, .title-section .title .title-form select:focus::-ms-input-placeholder {
+            opacity: 0;
+            -webkit-transition: opacity 0.3s ease;
+            -o-transition: opacity 0.3s ease;
+            transition: opacity 0.3s ease; }
+          .title-section .title .title-form input:focus::placeholder, .title-section .title .title-form select:focus::placeholder {
+            opacity: 0;
+            -webkit-transition: opacity 0.3s ease;
+            -o-transition: opacity 0.3s ease;
+            transition: opacity 0.3s ease; }
+      .title-section .title .title-form button {
+        text-align: center;
+        height: 50px;
+        width: 65%;
+        background-color: #5b6ceb;
+        border: none;
+        -webkit-border-radius: 6px;
+                border-radius: 6px;
+        display: block;
+        margin: 14px 0px 35px auto;
+        color: #fff;
+        font-family: 'OpenSans-Bold';
+        font-size: 14px; }
+    .title-section .title .title-text {
+      max-width: 485px;
+      color: #fff; }
+      .title-section .title .title-text h3 {
+        text-transform: uppercase;
+        line-height: 65px;
+        font-family: 'OpenSans-Bold';
+        font-size: 48px;
+        margin-bottom: 25px; }
+      .title-section .title .title-text h4 {
+        max-width: 280px;
+        font-family: 'FreestyleScript';
+        font-size: 40px;
+        margin: 0; }
+
+.classes {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .classes h3 {
+    color: #5b6ceb;
+    font-family: 'OpenSans-Bold';
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 125px 0 0; }
+  .classes p {
+    color: #777777;
+    font-family: 'FreestyleScript';
+    font-size: 40px;
+    margin: 25px 0 62px 0; }
+  .classes .classes-description {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .classes .classes-description .class-block {
+      max-width: 570px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 13px 15px;
+      -webkit-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.1);
+              box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.1);
+      -webkit-border-radius: 6px;
+              border-radius: 6px; }
+      .classes .classes-description .class-block .description {
+        padding: 50px 10px 0 30px; }
+        .classes .classes-description .class-block .description h4 {
+          margin: 0;
+          margin-bottom: 30px;
+          color: #777777;
+          font-size: 20px;
+          font-family: 'OpenSans-Bold';
+          text-transform: uppercase; }
+        .classes .classes-description .class-block .description p {
+          margin: 0;
+          color: #555555;
+          font-size: 14px;
+          font-family: 'OpenSans-Regular';
+          line-height: 22px;
+          margin-bottom: 15px; }
+          .classes .classes-description .class-block .description p + p {
+            color: #999999;
+            font-size: 14px;
+            font-family: 'OpenSans-Regular'; }

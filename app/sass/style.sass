@@ -3,7 +3,7 @@
 body 
 	font-family: 'OpenSans-Regular', sans-serif
 	font-weight: 400
-	font-size: 15px
+	font-size: 14px
 	a 
 		text-decoration: none
 	
@@ -39,7 +39,7 @@ header
 				padding-bottom: 5px
 				&::after
 					display: block
-main 
+.title-section
 	height: 600px
 	width: 100%
 	margin: 0 auto
@@ -55,7 +55,111 @@ main
 		align-items: center
 		justify-content: center
 		.title-form
+			background-color: #FFF
+			padding: 0 40px 0 30px
+			border-radius: 15px
+			margin-right: 90px
+			box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.15)
+			p 
+				color: #5363db
+				font-size: 25px
+				font-family: 'OpenSans-SemiBold'
+				margin: 40px 0 30px
 			input, select
+				box-sizing: border-box
 				display: block
+				height: 50px
+				width: 100%
+				margin-bottom: 17px
+				background-color: #f2f2f2
+				border: none
+				border-radius: 6px 
+				padding-left: 10px 
+				color: #888888
+				&::placeholder 
+					opacity: 1
+					transition: opacity 0.3s ease
+				&:focus
+					outline: none
+					border: 1px solid #c7c6c6
+					&::placeholder
+						opacity: 0
+						transition: opacity 0.3s ease
+			button 
+				text-align: center
+				height: 50px
+				width: 65%
+				background-color: #5b6ceb
+				border: none
+				border-radius: 6px 
+				display: block
+				margin: 14px 0px 35px auto
+				color: #fff
+				font-family: 'OpenSans-Bold'
+				font-size: 14px
+
+		.title-text 
+			max-width: 485px
+			color: #fff
+			h3 
+				text-transform: uppercase
+				line-height: 65px
+				font-family: 'OpenSans-Bold'
+				font-size: 48px
+				margin-bottom: 25px
+			h4
+				max-width: 280px
+				font-family: 'FreestyleScript'
+				font-size: 40px
+				margin: 0
+
+.classes
+	display: flex 
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	h3
+		color: #5b6ceb
+		font-family: 'OpenSans-Bold'
+		font-size: 30px
+		text-transform: uppercase
+		margin: 125px 0 0 
+	p
+		color: #777777
+		font-family: 'FreestyleScript'
+		font-size: 40px
+		margin: 25px 0 62px 0
+	.classes-description
+		display: flex
+		flex-direction: row 
+		flex-wrap: wrap
+		justify-content: center
+		.class-block
+			max-width: 570px
+			display: flex 
+			margin: 13px 15px
+			box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.10)
+			border-radius: 6px 
+			img 
+			.description
+				padding: 50px 10px 0 30px
+				h4 
+					margin: 0
+					margin-bottom: 30px
+					color: #777777
+					font-size: 20px
+					font-family: 'OpenSans-Bold'
+					text-transform: uppercase
+				p
+					margin: 0
+					color: #555555
+					font-size: 14px
+					font-family: 'OpenSans-Regular'
+					line-height: 22px
+					margin-bottom: 15px
+					& + p 
+						color: #999999
+						font-size: 14px
+						font-family: 'OpenSans-Regular'
 
 		
