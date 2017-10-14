@@ -340,11 +340,6 @@ header {
   -webkit-transition: opacity .3s ease;
   -o-transition: opacity .3s ease;
   transition: opacity .3s ease; }
-  .hover-block::before {
-    background-image: url("../img/css_sprites.png");
-    background-position: -10px -519px;
-    width: 24px;
-    height: 24px; }
 
 .about-us {
   display: -webkit-box;
@@ -377,3 +372,77 @@ header {
   .about-us .slider img {
     max-width: 570px;
     max-height: 300px; }
+
+.elements {
+  height: 800px;
+  background-image: url("../img/bg-img-2.png");
+  background-position: top center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat; }
+  .elements .elements-blue {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(117, 130, 226, 0.8); }
+    .elements .elements-blue .element-block {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      padding-bottom: 60px;
+      max-width: 1300px;
+      margin-right: auto;
+      margin-left: auto; }
+      .elements .elements-blue .element-block .el-item {
+        max-width: 275px;
+        text-align: center;
+        margin: 60px 15px 0;
+        line-height: 30px; }
+        .elements .elements-blue .element-block .el-item .sign {
+          background-image: url("../img/css_sprites.png");
+          width: 70px;
+          height: 70px;
+          margin: 0 auto; }
+          .elements .elements-blue .element-block .el-item .sign.item-1 {
+            background-position: -190px -191px;
+            margin-top: 60px; }
+          .elements .elements-blue .element-block .el-item .sign.item-2 {
+            background-position: -191px -10px;
+            margin-top: 60px; }
+          .elements .elements-blue .element-block .el-item .sign.item-3 {
+            background-position: -191px -100px;
+            margin-top: 60px; }
+          .elements .elements-blue .element-block .el-item .sign.item-4 {
+            background-position: -10px -101px;
+            margin-top: 60px; }
+            .elements .elements-blue .element-block .el-item .sign.item-4 + h5 {
+              max-width: 110px; }
+          .elements .elements-blue .element-block .el-item .sign.item-5 {
+            background-position: -100px -191px; }
+            .elements .elements-blue .element-block .el-item .sign.item-5 + h5 {
+              padding: 30px 0 55px; }
+          .elements .elements-blue .element-block .el-item .sign.item-6 {
+            background-position: -100px -101px; }
+          .elements .elements-blue .element-block .el-item .sign.item-7 {
+            background-position: -10px -191px; }
+          .elements .elements-blue .element-block .el-item .sign.item-8 {
+            background-position: -101px -10px; }
+        .elements .elements-blue .element-block .el-item h5 {
+          color: #fff;
+          font-family: 'OpenSans-Bold';
+          font-size: 18px;
+          margin: 0 auto;
+          max-width: 181px;
+          padding: 30px 0 25px; }
+        .elements .elements-blue .element-block .el-item p {
+          color: #fff;
+          font-family: 'OpenSans-Regular';
+          font-size: 16px;
+          margin: 0; }

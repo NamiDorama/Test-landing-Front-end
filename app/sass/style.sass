@@ -184,11 +184,7 @@ header
 	height: 100%
 	opacity: 0
 	transition: opacity .3s ease
-	&::before
-		background-image: url("../img/css_sprites.png")
-		background-position: -10px -519px
-		width: 24px
-		height: 24px
+		
 .about-us
 	display: flex 
 	justify-content: center
@@ -212,3 +208,68 @@ header
 		img 
 			max-width: 570px
 			max-height: 300px
+.elements
+	height: 800px
+	background-image: url("../img/bg-img-2.png")
+	background-position: top center
+	background-size: cover
+	background-repeat: no-repeat
+	.elements-blue
+		height: 100%
+		width: 100%
+		background-color: rgba(117, 130, 226, .8)
+		.element-block
+			display: flex
+			justify-content: center
+			flex-wrap: wrap
+			padding-bottom: 60px
+			max-width: 1300px
+			margin-right: auto
+			margin-left: auto
+			.el-item
+				max-width: 275px
+				text-align: center
+				margin: 60px 15px 0
+				line-height: 30px
+				.sign
+					background-image: url("../img/css_sprites.png")
+					width: 70px
+					height: 70px
+					margin: 0 auto
+					&.item-1
+						background-position: -190px -191px
+						margin-top: 60px 
+					&.item-2
+						background-position: -191px -10px
+						margin-top: 60px 
+					&.item-3
+						background-position: -191px -100px
+						margin-top: 60px 
+					&.item-4
+						background-position: -10px -101px
+						margin-top: 60px 
+						& + h5  
+							max-width: 110px 
+					&.item-5
+						background-position: -100px -191px
+						& + h5 
+							padding: 30px 0 55px 
+					&.item-6
+						background-position: -100px -101px
+					&.item-7
+						background-position: -10px -191px
+					&.item-8
+						background-position: -101px -10px
+			
+				h5 
+					color: #fff
+					font-family: 'OpenSans-Bold'
+					font-size: 18px
+					margin: 0 auto
+					max-width: 181px
+					padding: 30px 0 25px 
+				p 
+					color: #fff
+					font-family: 'OpenSans-Regular'
+					font-size: 16px
+					margin: 0
