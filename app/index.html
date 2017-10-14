@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+	<header>
+		<div class="topics">
+			<nav class="topic-link">
+				<a href="#">About us</a>
+				<a href="#">Reservation</a>
+				<a href="#">Gallery</a>
+			</nav>
+			<div class="logo">
+				<img src="img/logo.png" alt="YOGA">
+			</div>
+			<nav class="topic-link">
+				<a href="#">Blog</a>
+				<a href="#">Elements</a>
+				<a href="#">Shop</a>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="title">
+			<div class="title-form">
+			<p>Trial Class</p>
+				<form novalidate name="setting_form">
+					<input type="text" placeholder="Enter your name" required data-regex="^([А-Я|A-Z][а-я|a-z]+)$">
+					<input type="text" placeholder="Enter your phone" required data-regex="\b((1[2-9])|([2-9][0-9])|([0-9]{3}))\b">
+					<select name="class">
+						<option selected="">Chose your class</option>
+						<option value="health">Yoga for health</option>
+						<option value="lose-weight">Yoga for lose weight</option>
+						<option value="children">Yoga for children</option>
+						<option value="elderly">Yoga for elderly</option>
+					</select>
+					<button type="submit">Try it</button>
+					<div class="error hidden"></div>
+				</form>
+			</div>
+			<div class="title-text">
+				<h3>Just Balance your Mind & Body </h3>
+				<h4>Create the healthy living for yourself</h2>
+				</div>
+			</div>
+
+	</main>
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

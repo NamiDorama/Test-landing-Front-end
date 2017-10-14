@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'FreestyleScript';
+  src: url("../fonts/FreestyleScript/FreestyleScript.eot");
+  src: url("../fonts/FreestyleScript/FreestyleScript.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/FreestyleScript/FreestyleScript.woff") format("woff");
+  src: url("../fonts/FreestyleScript/FreestyleScript.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url("../fonts/OpenSans-Regular/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans-Regular/OpenSans-Regular.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/OpenSans-Regular/OpenSans-Regular.woff") format("woff");
+  src: url("../fonts/OpenSans-Regular/OpenSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'OpenSans-SemiBold';
+  src: url("../fonts/OpenSans-SemiBold/OpenSans-SemiBold.eot");
+  src: url("../fonts/OpenSans-SemiBold/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/OpenSans-SemiBold/OpenSans-SemiBold.woff") format("woff");
+  src: url("../fonts/OpenSans-SemiBold/OpenSans-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url("../fonts/OpenSans-Bold/OpenSans-Bold.eot");
+  src: url("../fonts/OpenSans-Bold/OpenSans-Bold.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/OpenSans-Bold/OpenSans-Bold.woff") format("woff");
+  src: url("../fonts/OpenSans-Bold/OpenSans-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'OpenSans-Italic';
+  src: url("../fonts/OpenSans-Italic/OpenSans-Italic.eot");
+  src: url("../fonts/OpenSans-Italic/OpenSans-Italic.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/OpenSans-Italic/OpenSans-Italic.woff") format("woff");
+  src: url("../fonts/OpenSans-Italic/OpenSans-Italic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+body {
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 15px; }
+  body a {
+    text-decoration: none; }
+
+header {
+  height: 100px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+  header .topics {
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    header .topics a {
+      color: #555555;
+      font-family: 'OpenSans-SemiBold';
+      position: relative;
+      margin-right: 25px; }
+      header .topics a:last-child {
+        margin-right: 0; }
+      header .topics a::after {
+        content: "";
+        display: none;
+        position: absolute;
+        height: 1px;
+        width: 65%;
+        background-color: #5363db;
+        bottom: 0;
+        left: 15%; }
+      header .topics a:hover {
+        color: #5363db;
+        padding-bottom: 5px; }
+        header .topics a:hover::after {
+          display: block; }
+
+main {
+  height: 600px;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url("../img/bg-img.png");
+  background-position: top center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat; }
+  main .title {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(117, 130, 226, 0.8);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    main .title .title-form input, main .title .title-form select {
+      display: block; }

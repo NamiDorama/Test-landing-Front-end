@@ -1,0 +1,61 @@
+@import "_fonts"
+
+body 
+	font-family: 'OpenSans-Regular', sans-serif
+	font-weight: 400
+	font-size: 15px
+	a 
+		text-decoration: none
+	
+header 
+	height: 100px
+	width: 100%
+	max-width: 1200px
+	margin: 0 auto
+	.topics
+		height: 100%
+		display: flex
+		flex-direction: row 
+		justify-content: space-around
+		align-items: center
+		a 
+			color: #555555
+			font-family: 'OpenSans-SemiBold'
+			position: relative
+			margin-right: 25px
+			&:last-child
+				margin-right: 0
+			&::after
+				content: ""
+				display: none
+				position: absolute
+				height: 1px 
+				width: 65%
+				background-color: #5363db
+				bottom: 0
+				left: 15%
+			&:hover
+				color: #5363db
+				padding-bottom: 5px
+				&::after
+					display: block
+main 
+	height: 600px
+	width: 100%
+	margin: 0 auto
+	background-image: url("../img/bg-img.png")
+	background-position: top center
+	background-size: cover
+	background-repeat: no-repeat
+	.title
+		height: 100%
+		width: 100%
+		background-color: rgba(117, 130, 226, .8)
+		display: flex 
+		align-items: center
+		justify-content: center
+		.title-form
+			input, select
+				display: block
+
+		
