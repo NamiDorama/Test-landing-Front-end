@@ -318,8 +318,62 @@ header {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 100px 0; }
+  margin: 100px 0 0 0; }
   .gallery img {
     width: 25%;
     height: 100%;
     position: relative; }
+    .gallery img:hover.hover-block {
+      opacity: 1;
+      -webkit-transition: opacity .3s ease;
+      -o-transition: opacity .3s ease;
+      transition: opacity .3s ease; }
+
+.hover-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(124, 137, 239, 0.8);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+  transition: opacity .3s ease; }
+  .hover-block::before {
+    background-image: url("../img/css_sprites.png");
+    background-position: -10px -519px;
+    width: 24px;
+    height: 24px; }
+
+.about-us {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 125px 0; }
+  .about-us .about-us-text {
+    max-width: 470px;
+    margin-right: 110px; }
+    .about-us .about-us-text h5 {
+      color: #5b6ceb;
+      font-family: 'OpenSans-Bold';
+      font-size: 30px;
+      text-transform: uppercase;
+      margin: 0 0 28px 0; }
+    .about-us .about-us-text p {
+      color: #555555;
+      font-family: 'OpenSans-Regular';
+      font-size: 14px;
+      margin: 0; }
+  .about-us .slider img {
+    max-width: 570px;
+    max-height: 300px; }

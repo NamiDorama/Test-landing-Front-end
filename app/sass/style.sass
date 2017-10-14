@@ -166,26 +166,49 @@ header
 	display: flex 
 	flex-wrap: wrap 
 	justify-content: center
-	margin: 100px 0
+	margin: 100px 0 0 0
 	img 
 		width: 25%
 		height: 100%
 		position: relative
-	// 	&:hover
-	// 		&.hover-block
-	// 			opacity: 1
-	// 			transition: opacity .3s ease
-	// .hover-block
-	// 	position: absolute
-	// 	top: 0
-	// 	left: 0
-	// 	background-color: rgba(124, 137, 239, .8);
-	// 	width: 100%
-	// 	height: 100%
-	// 	opacity: 0
-	// 	transition: opacity .3s ease
-	// 	&::before
-	// 		background-image: url("../img/css_sprites.png")
-	// 		background-position: -10px -519px
-	// 		width: 24px
-	// 		height: 24px
+		&:hover
+			&.hover-block
+				opacity: 1
+				transition: opacity .3s ease
+.hover-block
+	position: absolute
+	top: 0
+	left: 0
+	background-color: rgba(124, 137, 239, .8)
+	width: 100%
+	height: 100%
+	opacity: 0
+	transition: opacity .3s ease
+	&::before
+		background-image: url("../img/css_sprites.png")
+		background-position: -10px -519px
+		width: 24px
+		height: 24px
+.about-us
+	display: flex 
+	justify-content: center
+	align-items: center
+	margin: 125px 0
+	.about-us-text
+		max-width: 470px
+		margin-right: 110px
+		h5 
+			color: #5b6ceb
+			font-family: 'OpenSans-Bold'
+			font-size: 30px
+			text-transform: uppercase
+			margin: 0 0 28px 0
+		p 
+			color: #555555
+			font-family: 'OpenSans-Regular'
+			font-size: 14px
+			margin: 0
+	.slider 
+		img 
+			max-width: 570px
+			max-height: 300px
