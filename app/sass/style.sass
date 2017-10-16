@@ -10,10 +10,15 @@ body
 header 
 	height: 100px
 	width: 100%
-	max-width: 1200px
 	margin: 0 auto
+	position: fixed
+	top: 0
+	z-index: 999
+	background-color: #FFF
+	border-bottom: 1px solid #5b6ceb
 	.topics
 		height: 100%
+		max-width: 1200px
 		display: flex
 		flex-direction: row 
 		justify-content: space-around
@@ -167,23 +172,40 @@ header
 	flex-wrap: wrap 
 	justify-content: center
 	margin: 100px 0 0 0
-	img 
+	.img-gallery
 		width: 25%
-		height: 100%
 		position: relative
+		img 
+			width: 100%
+			height: 100%
 		&:hover
-			&.hover-block
+			.blue
 				opacity: 1
 				transition: opacity .3s ease
-.hover-block
-	position: absolute
-	top: 0
-	left: 0
-	background-color: rgba(124, 137, 239, .8)
-	width: 100%
-	height: 100%
-	opacity: 0
-	transition: opacity .3s ease
+		.blue 
+			opacity: 0
+			transition: opacity .3s ease
+			width: 100%
+			height: 100%
+			background-color: rgba(124, 137, 239, .8) 
+			position: absolute
+			top: 0
+			left: 0
+			.search
+				position: absolute
+				width: 71px
+				top: 41%
+				left: 42%
+
+// .hover-block
+// 	position: absolute
+// 	top: 0
+// 	left: 0
+// 	background-color: rgba(124, 137, 239, .8)
+// 	width: 100%
+// 	height: 100%
+// 	opacity: 0
+// 	transition: opacity .3s ease
 		
 .about-us
 	display: flex 
@@ -343,5 +365,5 @@ header
 				border-radius: 19px
 				display: block
 				margin: 25px auto 50px auto
-				// &:hover 
-				// 	background-color: #09ccb7
+				&:hover 
+					background-color: #09ccb7
